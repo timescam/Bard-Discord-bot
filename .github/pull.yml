@@ -1,0 +1,5 @@
+version: "1"
+rules:
+  - base: railway
+    upstream: Qoct:main
+    mergeMethod: merge
