@@ -1,8 +1,5 @@
 FROM python:alpine
 
-WORKDIR /bot
-COPY . /bot
-
 RUN pip3 install -r requirements.txt
 
 COPY example.env .env
