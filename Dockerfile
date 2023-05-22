@@ -7,7 +7,7 @@ RUN pip install -r requirements.txt
 
 COPY . /bot
 
-COPY .env.dev .env
+COPY example.env .env
 ARG DISCORD_BOT_TOKEN
 ARG BARD_TOKEN
 RUN sed -i 's/DISCORD_BOT_TOKEN="xxxx"/DISCORD_BOT_TOKEN="${DISCORD_BOT_TOKEN}"/' .env
